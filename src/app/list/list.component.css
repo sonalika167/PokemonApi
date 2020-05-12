@@ -1,8 +1,12 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
-
+.container-fluid{
+    color:yellow;
+    background-color: rgb(36, 35, 35);
+}
 .pokemon-lists{
     display: flex;
     flex-wrap: wrap;
@@ -11,16 +15,42 @@
 }
 
 .pokemon-card{
+    
     border-radius: 0px;
     display: flex;
     flex-direction:column;
-    width: 36%;
-    background-color: #a646ef;
+    width: 40%;
+    background-color: #494749;
     color: white;
-    margin: 20px 30px;
+    margin: 40px 50px;
     padding: 20px 30px;
 }
-
-.btn-dark{
-    padding: 5px 5px!important;
+.pokemon-name{
+    font-family: Papyrus, fantasy;
+    font-size: 50px;
 }
+
+h1{ font-family: Copperplate, Copperplate Gothic Light, fantasy;  font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+    padding: 20px 20px; 
+font-size: 80px;}
+
+.btn-dark {
+    border-radius: 10px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 0px;
+    width: 150px;
+    height: 80px;
+    cursor: pointer;
+    margin: 20px;
+  }
+  
+ 
+  
+
+  
+
+ 
