@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.pokemon-lists{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.pokemon-card{
+    border-radius: 0px;
+    display: flex;
+    flex-direction:column;
+    width: 36%;
+    background-color: #a646ef;
+    color: white;
+    margin: 20px 30px;
+    padding: 20px 30px;
+}
+
+.btn-dark{
+    padding: 5px 5px!important;
+}
