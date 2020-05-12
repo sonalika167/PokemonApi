@@ -10,7 +10,13 @@ export class AuthService {
 
   url = "https://pokeapi.co/api/v2/pokemon/";
 
+ detailurl = "";
+
   showPokemonLists(){
     return this.http.get(this.url);
+  }
+
+  showPokemonDetails(url0){
+    return this.http.get(url0);
   }
 }

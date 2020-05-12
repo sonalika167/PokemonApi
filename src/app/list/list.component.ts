@@ -20,5 +20,10 @@ export class ListComponent implements OnInit {
       }
     })
   }
+  callFunction(event, post){
+
+    console.log(post);
+this.auth.detailurl = post;
+  }
 
 }
