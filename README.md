@@ -2,7 +2,6 @@
 A Single Page Application made using Angular, that will show dashboard of Pokémons and user can click to view details of respective Pokémon.
 Also, user can add notes for Pokémon which will be saved in local storage.
 
-Deployed Site : https://pokemon-api-741.netlify.app
 
 Tested on Firefox and Chrome browser on desktop.
 
