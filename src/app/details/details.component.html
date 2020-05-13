@@ -2,14 +2,14 @@
 <div class="container-fluid">
     <div class = "box">
     <div class = "photo">
-        <img src= "{{pokeData['sprites']['front_default']}}"/>
+        <img src= "{{pokeData['sprites']['front_default']}}"/>      <!-- fetching the image from API -->
         </div>
     <div class = "name">
-        <h3 class="text-center">{{"Name: "}} {{pokeData['name']}}</h3>
+        <h3 class="text-center">{{"Name: "}} {{pokeData['name']}}</h3>      <!-- fetching the species name from API -->
         <div class = "weight">
-            <h3 class="text-center">{{"Weigth: "}} {{pokeData['weight']}}</h3>
+            <h3 class="text-center">{{"Weigth: "}} {{pokeData['weight']}}</h3>    <!-- fetching the weight from API -->
             <div class = "ability">
-                <h3 class="text-center">{{"Abilities:"}}</h3>
+                <h3 class="text-center">{{"Abilities:"}}</h3>                      <!-- fetching the abilities from API -->
                 <h3 class="text-center" *ngFor = "let item of pokeData['abilities']"> {{item['ability']['name']}}</h3>
             </div>
         </div>

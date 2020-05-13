@@ -13,17 +13,17 @@ export class ListComponent implements OnInit {
   lists:any[] = [];
 
   ngOnInit(): void {
-    this.auth.showPokemonLists().subscribe((res)=>{
+    this.auth.showPokemonLists().subscribe((res)=>{      //logic to display 20 pokemon lists
       console.log(res["results"])
       for(let i=0;i<20;i++){
         this.lists.push(res["results"][i]);
       }
     })
   }
-  callFunction(event, post){
+  callFunction(event, url1){                             //button function to get the url when clicked
 
-    console.log(post);
-this.auth.detailurl = post;
+    console.log(url1);
+this.auth.detailurl = url1;
   }
 
 }

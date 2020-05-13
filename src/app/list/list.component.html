@@ -5,10 +5,10 @@
     <div class="container pokemon-lists">
         <div class="pokemon-card" *ngFor = "let item of lists">
             <div class="pokemon-name">
-                <div class="text-center">{{item['name']}}</div>
+                <div class="text-center">{{item['name']}}</div>   <!-- fetching the name of the pokemon from API -->
             </div>
             <div class="pokemon-url text-center mt-3">
-                
+                <!-- updating the API url for the details of the pokemon on onclick of the button in the global variable declared in auth.services.ts -->
                 <a routerLink="/details" routerLinkActive="active"><button class="btn btn-dark" (click)="callFunction($event, item.url)">View Details</button></a>
             </div>
         </div>
