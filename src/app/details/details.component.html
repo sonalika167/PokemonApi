@@ -1,24 +1,47 @@
-<body>
-    <div class="container-fluid pokemon-container">
-        <div class = "box">
-            <div class = "photo">
-                <img src= "{{pokeData['sprites']['front_default']}}"/>
-            </div>
-            <div class = "name">
-                <h3 class="text-center">{{"Name: "}} {{pokeData['name']}}</h3>
-                <div class = "weight">
-                    <h3 class="text-center">{{"Weigth: "}} {{pokeData['weight']}}</h3>
-                    <div class = "ability">
-                        <h3 class="text-center">{{"Abilities:"}}</h3>
-                        <h3 class="text-center" *ngFor = "let item of pokeData['abilities']"> {{item['ability']['name']}}</h3>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+            </head>
+        <body>
+            <div class="container-fluild" style="border: 1px solid black;">
+               
+                <div class = "box row">
+                    <div class = "photo col-lg-6">
+                        <img src= "{{pokeData['sprites']['front_default']}}" class="pic"/>
+                    </div>
+                    <div class = "name col-lg-6">
+                        <div class="nam">
+                            <h3 class="text-center"> {{"Name: "}} {{pokeData['name']}}</h3>
+                            <div class = "weight">
+                            <h3 class="text-center">{{"Weigth: "}} {{pokeData['weight']}}</h3>
+                            <div class = "type">
+                                <h3 class="text-center">{{"Type: "}} {{pokeData['types'][0]['type']['name']}}</h3>
+                            </div>
+                            <div class = "weight">
+                                <h3 class="text-center">{{"Moves: "}} {{pokeData['moves'][0]['move']['name']}}</h3>
+                            </div>
+                            <div class = "ability">
+                                <h3 class="text-center">{{"Abilities:"}}</h3>
+                                <h3 class="text-center" *ngFor = "let item of pokeData['abilities']"> {{item['ability']['name']}}</h3>
+                            </div>
+                            <div class = "base-exp">
+                                <h3 class="text-center">{{"Base Experiance: "}} {{pokeData['base_experience']}}</h3>
+                            </div>
+                        </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+        
+                <div class="notes-section row" >
+                    <div class="col-lg-12">
+                        <h4 class="note-name">Notes Section</h4>
+                    <textarea class="note-space" name="notes" #notes placeholder="Enter notes">{{textArea}}</textarea>
+                    <button class="btn btn-primary beta" (click) = "updateNotes(notes)">Save Notes</button>
+                    </div>
+                    
+                </div>
         </div>
-
-        <div class="notes-section">
-            <h4>Notes Section</h4>
-            <textarea name="notes" #notes cols="30" rows="10" placeholder="Enter notes">{{textArea}}</textarea>
-            <button class="btn btn-primary" (click) = "updateNotes(notes)">Save Notes</button>
-        </div>
-</div>
+        
+    </body>
+</html>    
