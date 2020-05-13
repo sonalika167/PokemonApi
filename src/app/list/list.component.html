@@ -9,7 +9,7 @@
             </div>
             <div class="pokemon-url text-center mt-3">
                 <!-- updating the API url for the details of the pokemon on onclick of the button in the global variable declared in auth.services.ts -->
-                <a routerLink="/details" routerLinkActive="active"><button class="btn btn-dark" (click)="callFunction($event, item.url)">View Details</button></a>
+                <a routerLink = "details/{{item['name']}}"><button class="btn btn-dark" (click)="callFunction($event, item.url)">View Details</button></a>
             </div>
         </div>
     </div>  
