@@ -13,3 +13,14 @@
     color: white;
     
 }
+.notes-section{
+    
+    border-radius: 0px;
+    display: flex;
+    flex-direction:column;
+    width: 40%;
+    background-color: #494749;
+    color: white;
+    margin: 40px 50px;
+    padding: 20px 30px;
+}
