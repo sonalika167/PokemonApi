@@ -1,1 +1,1 @@
-/details/*      /details/:splat        200
+/details/:pokemonid      /details/:pokemonid       200
